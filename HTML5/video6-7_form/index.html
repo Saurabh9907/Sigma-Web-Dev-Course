@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta description="this is web form page">
+        <title>form lets-leranit.</title>
+    </head>
+    <bodu>
+        <h1>Form for apply sigma web development caurse A6</h1>
+        <form action="post">
+            <label for="username">Enter your name*</label>
+            <input type="text" placeholder="Enter your name" id="username" name="username" required autofocus>
+            <p input="text" pattern="[ab-a-95]">kkkkkkk</p>
+            <div><fieldset>
+                    <legend>Gender</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                 </fieldset>
+            </div>
+            <label for="password">Enter valid password*</label>
+            <input type="password" id="password" name="password" required><br>
+            <lebel for="email">Enter you google email*</lebel>
+            <input name="email" id="email" required><br>
+            <label for="dob">Enter your date of birth*</label>
+            <input type="date" id="date" name="date of birth" required><br>
+            <label for="card_no">Enter your card number*</label>
+            <input type="number" id="card_no" name="card_no" required>
+            <div>
+            <label for="photo">Upload a passport size photo*</label>
+            <input type="file" id="photo" name="photo" required accept="image">
+            </div>
+            <div>
+                <label for="subscribe">Subscribe new channel*</label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            </div>
+            <div>
+                <label for="comment">Enter your comment*</label><br>
+                <textarea rows="5" cols="50" required id="comment" name="comment" required placeholder="enter your comment"></textarea>
+            </div>
+            <div>
+                <label for="frutes">frutes</label>
+                <select name="frutes" id="frutes">
+                    <option value="mango">Mango</option>
+                    <option value="banana">Banana</option>
+                    <option value="grapes">Grapes</option>
+                </select>
+            </div>
+            <div>
+                <input type="reset" value="reset">
+                <input type="submit" value="submit"> 
+            </div>
+        </form>
+    </bodu>
+</html>
