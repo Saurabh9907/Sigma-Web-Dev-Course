@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      div {
+        color: yellow;
+        font-size: 20px;
+        background-color: black;
+      }
+      p{font-family: "Baloo Bhaijaan 2", sans-serif;}
+      /* this is pseudo selectors */
+      a:hover {
+        color: black;
+      }
+    span{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:300px;
+        font-size:60px;
+        font-style: italic;
+        text-decoration: underline;
+    
+        }
+      p::first-letter {
+        color: red;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      /* this is the attribute selector */
+      a[href] {
+        font-size: large;
+      }
+
+      a[target="_blank"] {
+        background-color: yellow;
+      }
+
+      a[href$="org"] {
+        color: red;
+      }
+
+      /* box modle */
+      #border {
+        border: 5px solid;
+        color: red;
+        padding: 4px;
+        margin: 5px;
+      }
+
+      /* font family */
+    </style>
+  </head>
+
+  <body>
+    <!-- this is use for show the sign of less then and greater then -->
+    &lt;p&gt;
+    <!-- it's use for present copy right sumble  -->
+    &copy;
+    <p>saurabh</p>
+    &nbsp;
+    <p>prajapati</p>
+    <!--this is none breaking line -->
+    <!-- this is no. code for regesterd sign -->
+    &#174; &#174;
+    <p>Less than: &lt;</p>
+    <p>Greater than: &gt;</p>
+    <p>&amp;nbsp; head p h nav []{{}}</p>
+    <!-- these are some entities code write here -->
+    &amp; &reg; &copy; &pound; &yen; &euro; &quot;
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nulla non magnam nisi quisquam! Ad, obcaecati. Maiores atque odio earum, asperiores fugit, ut at reiciendis, ducimus obcaecati id velit doloribus!</span> adipisicing elit. Repellendus
+        ipsa facere itaque.
+      </p>
+    </div>
+    <div id="border">
+      <a href="https://google.org">saurabh kumar parjapati</a><br />
+      <a href="https://google.com">saurabh kumar parjapati</a><br />
+      <a href="https://google.com" target="_blank">saurabh kumar parjapati</a
+      ><br />
+    </div>
+    <pre>
+      this is paragraph..  
+
+      djfaldjl                  djaldjl     
+                  kdjfla
+    </pre>
+    <pre>
+      <code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;title&gt;Document&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+              
+          &lt;/body&gt;
+          &lt;/html&gt;
+      </code>
+    </pre>
+  </body>
+</html>
