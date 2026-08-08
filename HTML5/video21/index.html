@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity in css</title>
+    <style>
+        h1{font-size: 50px; text-decoration:overline underline  wavy;}
+        p{color:aqua; font-size: 30px;}
+        .pred{color:red;}
+        .pyellow{color:yellow;}
+        .ppink{color:pink;}
+        #ip{color:orange !important; }
+        [data-x=a]{background-color: blueviolet;}
+
+
+    </style>
+</head>
+<body>
+    <h1>Specificity in css</h1>
+    <p style="color:bisque;" id="ip" class="pred pyellow ppink" data-x="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus laboriosam facilis veritatis incidunt velit officiis dolores! Neque quis ut autem libero hic.</p>
+</body>
+</html>
