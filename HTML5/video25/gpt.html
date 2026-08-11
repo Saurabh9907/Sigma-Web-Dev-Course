@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    border: 2px solid black;
+    padding: 5px;
+    background-color: aliceblue;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px;
+    box-shadow: 7px 8px 11px 10px gray;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    /* list-style: none; */
+    gap: 23px;
+  }
+
+  nav ul li::before {
+    content: "";
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png");
+    background-size: cover;
+    width: 100px;   /* ✅ yaha size set karo */
+    height: 100px; 
+    display: inline-block;
+  }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contect Us</li>
+        </ul>
+    </nav>
+</body>
+</html>
