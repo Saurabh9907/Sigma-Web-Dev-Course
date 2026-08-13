@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-site-layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: aliceblue;
+            /* position: relative; */
+        }
+        .box{
+            border: 3px solid black;
+            background-color: red;
+            height: 100px;
+            width: 95vw;
+            margin: 12px;
+            border-radius: 10px;
+        }
+        nav{
+            position: sticky;
+            top: 0px;
+
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            gap: 14px;
+        }
+        .main-box2{
+            border: 2px solid black;
+            margin: 12px;
+            height: 1000px;
+            width: 20vw;
+            background-color: brown;
+            border-radius: 10px;
+        }
+        .main-box3{
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            border: 2px solid black;
+            border: none;
+            height: 1000px;
+            margin: 12px;
+            gap: 10px;
+        }
+        .center-box{
+            border: 2px solid black;
+            width: 50vw;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        .main-box4{
+            border: 2px solid black;
+            margin: 12px;
+            height: 400px;
+            width: 20vw;
+            background-color: antiquewhite;
+            position: fixed;
+            right: 33px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="box1 box">nav</div>
+    </nav>
+    <main>
+        <div class="main-box2"></div>
+        <div class="main-box3">
+            <div class="center-box"></div>
+            <div class="center-box"></div>
+            <div class="center-box"></div>
+            <div class="center-box"></div>
+            <div class="center-box"></div>
+        </div>
+        <div class="main-box4"></div>
+    </main>
+    <footer>
+        <div class="box5 box"></div>
+    </footer>
+</body>
+</html>

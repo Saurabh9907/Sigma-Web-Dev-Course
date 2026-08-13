@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning in css!</title>
+    <style>
+      #parents {
+        border: 2px solid black ;
+        background-color: rgb(173, 105, 105);
+        /* filter: invert(0);
+        transform: translate(0); */
+        height: 2000px;
+        position:relative;
+
+      }
+      .box1 {
+        background-color: rgb(108, 152, 190);
+        position:relative;
+        top:56px;
+        left:45px;
+        z-index: 0;
+        position:sticky;
+
+      }
+      .box2 {
+        background-color: rgb(69, 44, 13);
+        /* position:relative; */
+        position:fixed;
+        z-index: 2;
+        
+        
+      }
+      .box3 {
+        background-color: rgb(222, 179, 125);
+        position:sticky;
+      }
+      .box4 {
+        background-color: navajowhite;
+        z-index: 1;
+      }
+      .box {
+        border: 2px solid black;
+        height: 100px;
+        width: 80vw;
+        margin: 45px;
+        padding: 23px;
+      }
+      * {
+        bottom: 0;
+        padding: 0;
+        background-color: rgb(167, 149, 185);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Positioning in css...</h1>
+    <div id="parents">
+      <div class="box box1"><h1>Box1</h1></div>
+      <div class="box box2"><h1>Box2</h1></div>
+      <div class="box box3"><h1>Box3</h1></div>
+      <div class="box box4"><h1>Box4</h1></div>
+    </div>
+  </body>
+</html>
