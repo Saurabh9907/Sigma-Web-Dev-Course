@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in css!</title>J
+    <style>
+        :root{ 
+            --color:yellow;
+            --secolor:blue;
+            --defpad:5px;
+            --defmarg:5px;
+        }
+        ul li{color: var(--color);
+            background-color: var(--secolor);
+            list-style-position: inside;
+            border: 2px solid var(--color);
+            padding: var(--defpad);
+        }
+        .first_div{
+            color: var(--secolor);
+            background-color: var(--color);
+            border: 2px solid black;
+            padding: var(--defpad);
+            margin: var(--defmarg);
+        }
+        .second_div{
+            color: var(--color);
+            background-color: var(--secolor);
+            padding: var(--defpad);
+            border: 2px solid black;
+            padding: var(--defpad);
+        }
+    </style>
+</head>
+<body>
+    <h1>I am software enginner i am also machanical enginner...</h1>
+    <div class="first_div">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime iure hic tempora.</div>
+    <div class="second_div">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque omnis placeat at?</div>
+    <ul>
+        <li>SAURABH</li>
+        <li>PRINCE</li>
+    </ul>
+</body>
+</html>
