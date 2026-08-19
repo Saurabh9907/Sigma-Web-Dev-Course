@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Queri</title>
+    <style>
+        h1{
+            text-align: center;
+            margin: 10px auto;
+        }
+        .container{
+            background-color: aliceblue;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 10px;
+            /* justify-content: center;
+            align-items: center; */
+        }
+        .box{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            /* justify-content: center;
+            align-items: center; */
+        }
+        @media only screen and (max-width: 400px){
+            body{
+                background-color: red;
+                .container{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .box{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+        @media screen and (orientation: portrait){
+            body{
+                /* background-color: yellow; */
+                .box{
+                    background-color: yellow;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media_Queri</h1>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+</body>
+</html>

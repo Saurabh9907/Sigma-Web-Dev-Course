@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media quari in css!</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      @media screen and (orientation:landscape) {
+        body {
+          border: 2px solid purple;
+        }
+      }
+      @media only screen and (max-width: 585px) {
+        body {
+          background-color: aqua;
+        }
+        .boxes {
+          flex-direction: column;
+        }
+      }
+
+      .boxes {
+        display: flex;
+      }
+      .box {
+        height: 233px;
+        width: 233px;
+        border: 2px solid black;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media quari in css...</h1>
+    <div class="boxes">
+      <div class="box">SAURABH</div>
+      <div class="box">SAURABH</div>
+      <div class="box">SAURABH</div>
+      <div class="box">SAURABH</div>
+    </div>
+  </body>
+</html>
