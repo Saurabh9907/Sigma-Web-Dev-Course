@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --firstcolor:red;
+      --widthth:459px;
+      --margin:5px;
+    }
+    .box{
+      border: 2px solid black;
+      background-color: var(--firstcolor);
+      width: var(--widthth);
+      /* width: 25px;
+      height: 25px; */
+      margin: var(--margin);
+    }
+    [href="#"]{
+      color: red;
+    
+    }
+    .container::after{
+      content: "this line that is apper here, this is possible through the suedo selector..";
+    }
+    h1, h2, li {
+      color: rgb(176, 176, 39);
+    }
+    .container *{
+      color: blue;
+    }
+     ::selection {
+            background-color: black;
+            color: aqua;
+        }
+     input::placeholder {
+            color: rgb(48, 48, 183);
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">this the a box</div>
+    <div class="box">this is also box </div>
+    <div class="box">this is another box</div>
+  </div>
+  <section>
+    <ul>
+      <li>
+        <a href="#"><h3>this is attribute selector</h3></a>
+      </li>
+      <li>form</li>
+      <li>
+        <input type="text" name="text " id="text" placeholder="enter you name">
+      </li>
+    </ul>
+    <h1>H one tag</h1>
+    <h2>h two tag</h2>
+  </section>
+</body>
+</html>
