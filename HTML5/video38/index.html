@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS,flex,box</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      border: 2px solid black;
+      background-color: rgb(59, 59, 86);
+      height: 80vh;
+      flex-wrap: wrp;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px 50px;
+      flex-direction: row;
+    }
+    .item {
+      border: 2px solid black;
+      /* margin: 5px; */
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      color: brown;
+      font-size: 50px;
+      
+      
+      text-align: center;
+
+    }
+    .order1{
+        order: 8;
+        align-self:flex-end;
+        flex-shrink: 5;
+        flex-grow: 2;
+    }
+  </style>
+  <body>
+    <h1> CSS flex box...!</h1>
+    <main>
+        
+      <div class="container">
+        <div class="item order1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <!-- <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div> -->
+      </div>
+    </main>
+  </body>
+</html>
