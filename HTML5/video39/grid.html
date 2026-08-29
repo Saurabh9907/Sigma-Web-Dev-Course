@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear gird concept.</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            /* position: relative; */
+            position: sticky;
+            top: 0px;
+            display: flex;
+            background-color: aqua;
+            height: 50px;
+            justify-content: space-around;
+            /* gap: 20px; */
+            align-items: center;
+            flex-direction: row;
+        }
+        nav ul{
+            display: flex;
+            /* background-color: aqua; */
+            /* height: 50px; */
+            justify-content: flex-end;
+            gap: 20px;
+            align-items: center;
+            flex-direction: row;
+        }
+        nav ul li{
+            list-style: none;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px 200px ;
+            margin: 10px;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: bisque;
+            border: 2px solid black;
+            height:200px;
+            width: 200px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="margin:5px;">This the a Grid exersice for more practicing.</h1>
+    </header>
+    <nav>
+        <div><h2>Saurabh</h2></div>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Course</li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </main>
+</body>
+</html>

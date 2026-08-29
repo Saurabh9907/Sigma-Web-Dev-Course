@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: beige;
+            display: grid;
+            width: 80vw;
+            /* grid-template-rows:[first] 100px [second] 120px [third] 100px;
+            grid-template-columns:100px 100px 100px; */
+            grid-template-columns:repeat(3, 1fr);
+            row-gap: 40px;
+            column-gap: 20px;
+        }
+         .item{
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* height: 40px;
+            width: 40px; */
+            height: 80px;
+            
+        }
+            /* ye box ya item ki position set karne ke liye use kiya jata hai  */
+            /* .item1{
+                grid-column: 1/3;
+                grid-row: first/third;
+            } */
+            /* ham grid row ko kuch is tarah bhi likh sakte hai dono method same hi hote hai */
+            /* .item4{
+                grid-row-start: first;
+                grid-row-end: third;
+            } */ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
