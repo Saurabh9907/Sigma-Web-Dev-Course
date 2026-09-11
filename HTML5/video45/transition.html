@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property In CSS</title>
+    <style>
+        .container{
+            width:60vw;
+            height: 40vh;
+            /* transition-property: background-color, transform;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+            transition-delay: 3s; */
+            background-color: aquamarine;
+        }
+        .box{
+           background-color: antiquewhite;
+            width: 50px;
+            height: 8vh;
+            transition-property: background-color, transform;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay:0.2s;
+        }
+        .transition:hover{
+            transform: translateX(75px) translateY(116px) scaleX(4) scaleY(5);
+        }
+    </style>
+</head>
+<body>
+   <h1 style="text-decoration: underline;">Transition Property In CSS</h1>
+   <div class="container">
+    <div class="box transition">box one</div>
+   </div>
+   
+</body>
+</html>
