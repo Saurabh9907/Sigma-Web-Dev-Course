@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation...</title>
+    <style>
+        .container{
+            background-color: aliceblue;
+            border: 2px solid rgba(190, 10, 10, 0.499);
+            height: 50vh;
+            width: 40vw;
+            border-radius: 10px;
+            /* border: none; */
+        }
+        .box{
+            width: 60px;
+            margin: 5px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 10px;
+            animation: Saurabh 1s ease 0.5s infinite alternate-reverse;
+        }
+        @keyframes Saurabh {
+            from{
+
+            }
+            to{
+                transform:translateX(190px) ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

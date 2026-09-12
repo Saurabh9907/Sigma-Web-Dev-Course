@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 60vh;
+            background-color: antiquewhite;
+        }
+        .box{
+            width:40px;
+            height: 50px;
+            /* animation-name: Saurabh ,Prajapati;
+            animation-duration:3s ;
+            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation-direction: alternate-reverse;
+            animation-iteration-count:infinite;
+            animation-delay: 1s;
+            animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* ham in dono m se koi bhi ek use kar sakte hai, dono ek hi kaam karte hai */
+            animation: Saurabh  3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite alternate-reverse,
+                        Prajapati 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite alternate-reverse ;
+        }
+        @keyframes Saurabh {
+    
+            from{background-color: aqua;
+                
+            }
+            to{
+                background-color: green;
+                transform: translateX(200px);
+            }
+        }
+        @keyframes Prajapati {
+            0%{
+                transform: rotate(50deg);
+            }
+            20%{
+                transform: rotate(100deg);
+            }
+            50%{
+                transform: rotate(200deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
