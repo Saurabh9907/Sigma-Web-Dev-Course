@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challge is Bouncing ball</title>
+    <style>
+        .container{
+            width:98vw;
+            height: 70vh;
+            background-color: blueviolet;
+            padding: 5px;
+            
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            border: none;
+            border-radius: 60px;
+            position:absolute;
+            bottom:135px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: ball 3s linear infinite,
+                     bounc 1s ease-out  infinite alternate;
+        }
+        @keyframes ball {
+            from{left: 0;
+            }  
+            to{
+                left: 100%;
+                
+            }
+        }
+        @keyframes bounc {
+            from{
+                bottom:;
+            }  
+            to{
+                
+                bottom:500px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bouncing Ball Create from Animation...!</h1>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
