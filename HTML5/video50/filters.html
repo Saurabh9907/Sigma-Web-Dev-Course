@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filters in CSS..!</title>
+    <style>
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+      body {
+        background-color: rgba(9, 255, 0, 0.61);
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      .box {
+        position: relative;
+        border: 5px solid green;
+        width: 450px;
+        height: 500px;
+        background-color: aquamarine;
+        border-radius: 10px;
+      }
+      .box img {
+        width: 450px;
+        height: 500px;
+        object-fit: cover;
+      }
+      .box1 img {
+       
+        filter: blur(2px);
+      }
+      .box2 img {
+       
+        filter: brightness(2);
+      }
+      .box3 img {
+       
+        filter: contrast(2);
+      }
+      .box4 img {
+        
+        filter: grayscale(80%);
+      }
+      .box5 img {
+        
+        filter: hue-rotate(90deg);
+      }
+      .box6 img {
+       
+        filter: drop-shadow(15px 15px 20px green);
+      }
+      .text {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        bottom: 10px;
+        left: 40%;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        align-items: center;
+        text-align: center;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Filters in CSS.</h1>
+    <div class="container">
+      <div class="box box1">
+        <img src="Mataji.jpg" />
+        <div class="text">Blur</div>
+      </div>
+
+      <div class="box box2">
+        <img src="Mataji.jpg" />
+        <div class="text">Brightness</div>
+      </div>
+      <div class="box box3">
+        <img src="Mataji.jpg" />
+        <div class="text">Contrast</div>
+      </div>
+      <div class="box box4">
+        <img src="Mataji.jpg" />
+        <div class="text">Grayscale</div>
+      </div>
+      <div class="box box5">
+        <img src="Mataji.jpg" />
+        <div class="text">Hue-rotate</div>
+      </div>
+      <div class="box box6">
+        <img src="Mataji.jpg" />
+        <div class="text">Drop-shadow</div>
+      </div>
+    </div>
+  </body>
+</html>

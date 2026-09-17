@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filters in CSS..!</title>
+    <style>
+      /* Scrollbar Removal */
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      /* Body Styling */
+      body {
+        background-color: rgba(9, 255, 0, 0.61);
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      /* Container Styling */
+      .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      /* Common Box Styling */
+      .box {
+        position: relative;
+        border: 5px solid green;
+        width: 450px;
+        height: 500px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      /* Image Styling */
+      .box img {
+        width: 450px;
+        height: 500px;
+        object-fit: cover;
+        object-position: top bottom;
+      }
+
+      /* Filters */
+      .box1 img {
+        filter: blur(2px);
+      }
+
+      .box2 img {
+        filter: brightness(2);
+      }
+
+      .box3 img {
+        filter: contrast(2);
+      }
+
+      .box4 img {
+        filter: grayscale(80%);
+      }
+
+      .box5 img {
+        filter: hue-rotate(90deg);
+      }
+
+      .box6 img {
+        filter: drop-shadow(15px 15px 20px green);
+      }
+
+      /* Text Styling */
+      .text {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Filters in CSS</h1>
+    <div class="container">
+      <div class="box box1">
+        <img src="Mataji.jpg" alt="Image with blur filter" />
+        <div class="text">Blur</div>
+      </div>
+
+      <div class="box box2">
+        <img src="Mataji.jpg" alt="Image with brightness filter" />
+        <div class="text">Brightness</div>
+      </div>
+
+      <div class="box box3">
+        <img src="Mataji.jpg" alt="Image with contrast filter" />
+        <div class="text">Contrast</div>
+      </div>
+
+      <div class="box box4">
+        <img src="Mataji.jpg" alt="Image with grayscale filter" />
+        <div class="text">Grayscale</div>
+      </div>
+
+      <div class="box box5">
+        <img src="Mataji.jpg" alt="Image with hue-rotate filter" />
+        <div class="text">Hue Rotate</div>
+      </div>
+
+      <div class="box box6">
+        <img src="Mataji.jpg" alt="Image with drop-shadow filter" />
+        <div class="text">Drop Shadow</div>
+      </div>
+    </div>
+  </body>
+</html>
